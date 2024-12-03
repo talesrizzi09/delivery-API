@@ -1,0 +1,586 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo vermelho para a página inicial */
+.body-inicio {
+    background-color: rgb(247, 168, 168);
+    height: 100%;
+}
+
+/* Fundo branco para as páginas de Login e Cadastro */
+.body-login-cadastro {
+    background-color: rgb(253, 253, 253);
+    min-height: vh;
+}
+
+/* Logo centralizado para a página inicial */
+.center-image {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Botões na página inicial */
+.move-down {
+    margin-top: 600px;
+}
+
+.btn-custom {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 2px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para links "voltar" */
+.back-link {
+    position: absolute; /* Fixa a seta na lateral */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da lateral */
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: none;
+    color: rgb(139, 8, 8);
+}
+
+/* Campos de formulário e botões */
+label {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.login-container {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(3, 3, 3, 0.5);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.login-container h1 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    margin-top: 0.5px;
+    color: #272727;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #0a0a0a;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+}
+
+.login-container input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #8f8f8f;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+
+h1{
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #122412;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+}
+
+.login-container button:hover {
+    background-color: #b6a6a6;
+}
+
+
+
+.form-control {
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    padding: 10px; /* Aumenta o espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento entre os campos */
+}
+
+.btn-danger {
+    background-color: rgb(131, 33, 33);
+    border: 2px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Centralização dos formulários de Login e Cadastro */
+.container {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;  background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(3, 3, 3, 0.5);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+/* ==== Novos estilos para as páginas Contemporâneo e Pizzarias ==== */
+
+/* Fundo vermelho */
+.body-contemporaneo, .body-pizzarias {
+    background-color: rgb(126, 70, 70);
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: black;
+    width: 100%;
+}
+
+/* Ícone do menu */
+.menu-icon {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Imagens dos itens do menu */
+.menu-item-image, .pizzaria-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 10px;
+}
+
+/* Títulos e preços */
+.menu-item-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.menu-item-price {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Espaçamento entre os cards */
+.row-cols-2 > .col {
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: red; /* Torna os nomes vermelhos */
+    font-weight: bold; /* Opcional: deixa os nomes em negrito */
+    transition: color 0.3s ease; /* Adiciona uma transição suave ao hover */
+  }
+  
+  .nav-link:hover {
+    color: darkred; /* Fica um vermelho mais escuro no hover */
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fundo branco da página */
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: rgb(77, 19, 19); /* Fundo vermelho do card */
+}
+
+
+
+.card-body {
+    padding: 10px;
+    color: #0a0a0a;    
+}
+
+h1 {
+    color: #0a0a0a;
+}
+
+.card-title {
+    color: rgb(0, 0, 0); /* Cor do texto do título do card */
+}
+
+.btn-light {
+    background-color: white; /* Botões com fundo branco */
+    color: #0a0a0a;
+
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.btn-light:hover {
+    opacity: 0.9; /* Efeito de opacidade no hover */
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fdf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.index-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    margin-left: 0;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+#button-reserva {
+    background-color: #285e2a;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 120px;
+    height: 70px;
+    font-size: 18px;
+}
+
+#button-reserva:hover {
+    background-color: #ffffff;
+}
+
+#login-btn {
+    background-color: #500d0d;
+    color: white;
+    font-size: 18px; 
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+    height: 70px;
+}
+
+#login-btn:hover {
+    background-color: #c5431c;
+}
+
+#p-reserva {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.top-container {
+    position: relative;
+    background-image: url('./Imagens/tipos-de-fast-food---SAIPOS---sistema-para-restaurante_uid_61b7b876a95fb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed; 
+}
+
+.mid-container {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.bottom-container {
+    font-size: 20px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.faq {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 50px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #500d0d;
+    font-size: 18px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+}
+
+#h2-footer {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.agradecimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#agradecimento {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.h1-reserva {
+    font-size: 24px;
+    color: #CBAB58;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #570f0f;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #c3e6cd;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3fa769;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+.horarios-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.horario-opcao {
+    padding: 10px 20px;
+    background-color: #eaf5ed;
+    border: 1px solid #c3e6cd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.horario-opcao:hover {
+    background-color: #d3f0da;
+}
+
+.horario-opcao.active {
+    background-color: #3fa769;
+    color: #fff;
+    border-color: #2b7a4b;
+    transform: scale(1.1);
+}
+
+button[type="submit"] {
+    background-color: #2b7a4b;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #23633a;
+}
+
+@media (max-width: 480px) {
+    .top-container {
+        width: 100%;
+        height: 600px;
+    }
+    
+    .form-container {
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input, textarea, button {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .horario-opcao {
+        padding: 8px 16px;
+    }
+}
+
+.card {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin: 15px; 
+    text-align: center; 
+  
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+
